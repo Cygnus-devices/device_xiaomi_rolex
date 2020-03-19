@@ -50,6 +50,9 @@ TARGET_SCREEN_WIDTH := 720
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
 
+# Ambient display
+PRODUCT_PACKAGES += \
+    XiaomiParts
 
 # ANT+
 PRODUCT_PACKAGES += \
@@ -316,7 +319,12 @@ PRODUCT_COPY_FILES += \
 
 # Power
 PRODUCT_PACKAGES += \
+<<<<<<< HEAD
+     android.hardware.power@1.0-service \
+     android.hardware.power@1.0-impl
+=======
     android.hardware.power@1.2-service-qti
+>>>>>>> 3cf20f9... rosy: adapt camera hals for PA
 
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/powerhint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.xml
@@ -397,8 +405,6 @@ PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf \
     $(DEVICE_PATH)/configs/sensors/sensor_def_qcomdev.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/sensor_def_qcomdev.conf
 
-PRODUCT_PACKAGES += \
-    XiaomiParts
 # Telephony
 PRODUCT_PACKAGES += \
     telephony-ext
