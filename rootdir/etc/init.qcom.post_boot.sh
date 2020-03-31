@@ -2178,6 +2178,9 @@ case "$target" in
                 echo 1 > /proc/sys/kernel/power_aware_timer_migration
                 # Set Memory parameters
                 configure_memory_parameters
+
+		# Set zram parameters
+		configure_zram_parameters
                 ;;
                 *)
                 ;;
