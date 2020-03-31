@@ -148,6 +148,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.qti.sys.fw.bservice_enable=true \
     ro.vendor.qti.am.reschedule_service=true
 
+# ParanoidDoze
+ro.sensor.proximity=true
+ro.sensor.pocket=xiaomi.sensor.pocket
+ro.sensor.pickup=xiaomi.sensor.pickup
+
 # Perf
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.extension_library=libqti-perfd-client.so \
